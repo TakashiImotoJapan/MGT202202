@@ -1,0 +1,63 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "1c19a16d865fe91989b2f5781231e312",
+    "packages": [
+        {
+            "name": "adoy/fastcgi-client",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/adoy/PHP-FastCGI-Client.git",
+                "reference": "aa6611b1af00f9c5e867f6f8485b7bac071a4c1a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/adoy/PHP-FastCGI-Client/zipball/aa6611b1af00f9c5e867f6f8485b7bac071a4c1a",
+                "reference": "aa6611b1af00f9c5e867f6f8485b7bac071a4c1a",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Adoy\\FastCGI\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pierrick Charron",
+                    "email": "pierrick@adoy.net"
+                }
+            ],
+            "description": "Lightweight, single file FastCGI client for PHP.",
+            "keywords": [
+                "fastcgi",
+                "fcgi"
+            ],
+            "support": {
+                "issues": "https://github.com/adoy/PHP-FastCGI-Client/issues",
+                "source": "https://github.com/adoy/PHP-FastCGI-Client/tree/master"
+            },
+            "time": "2019-12-11T15:40:07+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "adoy/fastcgi-client": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
+}

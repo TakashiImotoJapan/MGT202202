@@ -1,0 +1,43 @@
+version: "3"
+
+networks:
+    app_net:
+        driver: bridge
+        ipam:
+          driver: default
+          config:
+            - subnet: 172.16.200.0/24
+              gateway: 172.16.200.1
+
+services:
+    db:
+        platform: linux/x86_64
+        image: mariadb
+        ports:
+          #            - "0.0.0.0:3306:3306"
+            - "3306:3306"
+        expose:
+            - "3306"
+        environment:
+            MARIADB_ROOT_PASSWORD: root
+            MARIADB_USER: test
+            MARIADB_PASSWORD: test
+              #            BIND-ADDRESS: 0.0.0.0
+        volumes:
+            - ./db/init:/docker-entrypoint-initdb.d
+        container_name: app_db
+        networks:
+          app_net:
+            ipv4_address: 172.16.200.11
+    ap:
+        build: ./python
+        ports:
+            - "0.0.0.0:8080:8080"
+        environment:
+            TZ: "Asia/Tokyo"
+        container_name: app_ap
+        networks:
+          app_net:
+            ipv4_address: 172.16.200.12
+        depends_on:
+            - db
