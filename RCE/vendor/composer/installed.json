@@ -1,0 +1,51 @@
+{
+    "packages": [
+        {
+            "name": "adoy/fastcgi-client",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/adoy/PHP-FastCGI-Client.git",
+                "reference": "aa6611b1af00f9c5e867f6f8485b7bac071a4c1a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/adoy/PHP-FastCGI-Client/zipball/aa6611b1af00f9c5e867f6f8485b7bac071a4c1a",
+                "reference": "aa6611b1af00f9c5e867f6f8485b7bac071a4c1a",
+                "shasum": ""
+            },
+            "time": "2019-12-11T15:40:07+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-0": {
+                    "Adoy\\FastCGI\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pierrick Charron",
+                    "email": "pierrick@adoy.net"
+                }
+            ],
+            "description": "Lightweight, single file FastCGI client for PHP.",
+            "keywords": [
+                "fastcgi",
+                "fcgi"
+            ],
+            "support": {
+                "issues": "https://github.com/adoy/PHP-FastCGI-Client/issues",
+                "source": "https://github.com/adoy/PHP-FastCGI-Client/tree/master"
+            },
+            "install-path": "../adoy/fastcgi-client"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

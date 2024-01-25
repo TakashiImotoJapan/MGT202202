@@ -1,0 +1,20 @@
+{
+  "name": "adoy/fastcgi-client",
+  "description": "Lightweight, single file FastCGI client for PHP.",
+  "keywords": [
+    "fastcgi",
+    "fcgi"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pierrick Charron",
+      "email": "pierrick@adoy.net"
+    }
+  ],
+  "autoload": {
+    "psr-0": {
+      "Adoy\\FastCGI\\": "src"
+    }
+  }
+}
